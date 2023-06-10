@@ -1,5 +1,6 @@
 # Github default labels (check https://github.com/davidzwa/default-repo/labels)
 labels:
+  # Github
   - name: bug
     description: Something isn't working
     color: d73a4a
@@ -28,11 +29,13 @@ labels:
     description: This will not be worked on
     color: ffffff
 issue-labels-include:
+  # Github
   - bug
   - documentation
   - enhancement
   - question    
 issue-labels-exclude:
+  # Github
   - duplicate
   - invalid
   - wontfix

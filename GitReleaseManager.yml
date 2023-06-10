@@ -32,40 +32,40 @@ default-branch: main
 # Configuration values used when creating labels
 labels:
   # davidzwa workflow
-  - name: Backend
+  - name: backend
     description: Backend scoped issue
     color: EA0DE6
-  - name: Deployment
+  - name: deployment
     description: Continuous or production deployment update
     color: FBCA04
-  - name: Docker
+  - name: docker
     description: Docker image # Application specific
     color: 677F56
-  - name: Epic
+  - name: epic
     description: Collection issue or big subproject
     color: 0052CC
-  - name: Frontend
+  - name: frontend
     description: Frontend scoped issue
     color: 0ED715
-  - name: High prio
+  - name: high prio
     description: This work item should be done soon!
     color: B60205
-  - name: Low prio
+  - name: low prio
     description: Low priority issue, only when no other work is present
     color: bfd4f2
-  - name: Medium prio
+  - name: medium prio
     description: Necessary but not critical work
     color: C5DEF5
-  - name: Needs triage
+  - name: needs triage
     description: Issue has not been finalized for development
     color: 5319E7
   - name: socket-io # Application specific
     description: SocketIO message, sync or interaction
     color: FBCA04
-  - name: Sponsored feature
+  - name: sponsored feature
     description: This feature is backed by financial support
     color: B60205
-  - name: Vue3 # Application specific
+  - name: vue3 # Application specific
     description: Topic related to Vue 2 to Vue 3 migration
     color: bfd4f2
   - name: work-in-progress
@@ -100,34 +100,34 @@ labels:
     description: Further information is requested
     color: cc317c
   # Github default labels (check https://github.com/davidzwa/default-repo/labels)
-  - name: bug
-    description: Something isn't working
-    color: d73a4a
-  - name: documentation
-    description: Improvements or additions to documentation
-    color: 0075ca
-  - name: duplicate
-    description: This issue or pull request already exists
-    color: cfd3d7
-  - name: enhancement
-    description: New feature or request
-    color: a2eeef
-  - name: good first issue
-    description: Good for newcomers
-    color: 7057ff
-  - name: help wanted
-    description: Extra attention is needed
-    color: 008672
-  - name: invalid
-    description: This doesn't seem right
-    color: e4e669
-  - name: question
-    description: Further information is requested
-    color: d876e3
-  - name: wontfix
-    description: This will not be worked on
-    color: ffffff
-  # Mend Renovate & Bolt labels
+  # - name: bug
+  #   description: Something isn't working
+  #   color: d73a4a
+  # - name: documentation
+  #   description: Improvements or additions to documentation
+  #   color: 0075ca
+  # - name: duplicate
+  #   description: This issue or pull request already exists
+  #   color: cfd3d7
+  # - name: enhancement
+  #   description: New feature or request
+  #   color: a2eeef
+  # - name: good first issue
+  #   description: Good for newcomers
+  #   color: 7057ff
+  # - name: help wanted
+  #   description: Extra attention is needed
+  #   color: 008672
+  # - name: invalid
+  #   description: This doesn't seem right
+  #   color: e4e669
+  # - name: question
+  #   description: Further information is requested
+  #   color: d876e3
+  # - name: wontfix
+  #   description: This will not be worked on
+  #   color: ffffff
+  # Mend Renovate & Bolt labels    
   - name: "Mend: configuration error"
     description: Security vulnerability detected by Mend
     color: d1260f
@@ -142,6 +142,11 @@ labels:
     color: d1260f
 # The labels that will be used to include issues in release notes.
 issue-labels-include:
+  # davidzwa
+  - deployment
+  - backend
+  - frontend
+  # GRM default
   - Breaking Change
   - Bug
   - Documentation
@@ -150,16 +155,35 @@ issue-labels-include:
   - Help Wanted
   - Improvement
   - Question
+  # Mend Renovate & Bolt labels
   - security fix
-# - renovate
+  - renovate
+  - "Mend: configuration error"
+  - "Mend: dependency security vulnerability"
 # The labels that will NOT be used when including issues in release notes.
 issue-labels-exclude:
+  # davidzwa
+  - needs triage
+  - work-in-progress
+  # GRM
   - Build
 # Overrides default pluralization and header names for specific labels.
 issue-labels-alias:
+  # davidzwa
+  - name: backend
+    header: Backend
+    plural: Backend
+  - name: frontend
+    header: Frontend
+    plural: Frontend    
+  # GRM
   - name: Documentation
     header: Documentation
     plural: Documentation
+  # Mend
   - name: security fix
     header: Security Fix
     plural: Security Fixes
+  - name: renovate
+    header: Renovate
+    plural: Renovate
