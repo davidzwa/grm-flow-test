@@ -127,7 +127,7 @@ labels:
   # - name: wontfix
   #   description: This will not be worked on
   #   color: ffffff
-  # Mend Renovate & Bolt labels    
+  # Mend
   - name: "Mend: configuration error"
     description: Security vulnerability detected by Mend
     color: d1260f
@@ -175,7 +175,7 @@ issue-labels-alias:
     plural: Backend
   - name: frontend
     header: Frontend
-    plural: Frontend    
+    plural: Frontend
   # GRM
   - name: Documentation
     header: Documentation
