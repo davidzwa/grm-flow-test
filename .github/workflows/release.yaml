@@ -50,8 +50,6 @@ jobs:
        repository: ${{ steps.repo.outputs._1 }}
        milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
        name: 'Release ${{ steps.gitversion.outputs.majorMinorPatch }}'
-       assets:  |
-         ${{ steps.copy.outputs.image }}.zip
 
     - name: Publish release with GitReleaseManager
       uses: gittools/actions/gitreleasemanager/publish@v0.10.2
