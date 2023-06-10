@@ -1,0 +1,41 @@
+# davidwa's Personal labels
+labels:
+  - name: Backend
+    description: Backend scoped issue
+    color: EA0DE6
+  - name: Deployment
+    description: Continuous or production deployment update
+    color: FBCA04
+  - name: Docker
+    description: Docker image # Application specific
+    color: 677F56
+  - name: Epic
+    description: Collection issue or big subproject
+    color: 0052CC
+  - name: Frontend
+    description: Frontend scoped issue
+    color: 0ED715
+  - name: High prio
+    description: This work item should be done soon!
+    color: B60205
+  - name: Low prio
+    description: Low priority issue, only when no other work is present
+    color: bfd4f2
+  - name: Medium prio
+    description: Necessary but not critical work
+    color: C5DEF5
+  - name: Needs triage
+    description: Issue has not been finalized for development
+    color: 5319E7
+  - name: socket-io # Application specific
+    description: SocketIO message, sync or interaction
+    color: FBCA04
+  - name: Sponsored feature
+    description: This feature is backed by financial support
+    color: B60205
+  - name: Vue3 # Application specific
+    description: Topic related to Vue 2 to Vue 3 migration
+    color: bfd4f2
+  - name: work-in-progress
+    description: Work has been started after triage was successful
+    color: 006B75
