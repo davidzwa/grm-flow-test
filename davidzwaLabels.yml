@@ -27,7 +27,7 @@ labels:
   - name: Needs triage
     description: Issue has not been finalized for development
     color: 5319E7
-  - name: socket-io # Application specific
+  - name: Socket-io # Application specific
     description: SocketIO message, sync or interaction
     color: FBCA04
   - name: Sponsored feature
@@ -36,6 +36,13 @@ labels:
   - name: Vue3 # Application specific
     description: Topic related to Vue 2 to Vue 3 migration
     color: bfd4f2
-  - name: work-in-progress
+  - name: Work-in-progress
     description: Work has been started after triage was successful
     color: 006B75
+issue-labels-include:
+  - Deployment
+  - Backend
+  - Frontend
+issue-labels-exclude:
+ - Needs triage
+ - Work-in-progress
