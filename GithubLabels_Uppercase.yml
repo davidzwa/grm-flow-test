@@ -1,0 +1,41 @@
+# Github default labels (check https://github.com/davidzwa/default-repo/labels)
+labels:
+  # Github
+  - name: Bug
+    description: Something isn't working
+    color: d73a4a
+  - name: Documentation
+    description: Improvements or additions to documentation
+    color: 0075ca
+  - name: Duplicate
+    description: This issue or pull request already exists
+    color: cfd3d7
+  - name: Enhancement
+    description: New feature or request
+    color: a2eeef
+  - name: Good first issue
+    description: Good for newcomers
+    color: 7057ff
+  - name: Help wanted
+    description: Extra attention is needed
+    color: 008672
+  - name: Invalid
+    description: This doesn't seem right
+    color: e4e669
+  - name: Question
+    description: Further information is requested
+    color: d876e3
+  - name: Wontfix
+    description: This will not be worked on
+    color: ffffff
+issue-labels-include:
+  # Github
+  - Bug
+  - Documentation
+  - Enhancement
+  - Question
+issue-labels-exclude:
+  # Github
+  - Duplicate
+  - Invalid
+  - Wontfix
