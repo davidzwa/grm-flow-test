@@ -28,7 +28,7 @@ close:
 
     Your **[GitReleaseManager](https://github.com/GitTools/GitReleaseManager)** bot :package::rocket:
 # The name of the default branch.
-default-branch: main
+# default-branch: main
 # Configuration values used when creating labels
 labels:
   # davidzwa workflow
