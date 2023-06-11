@@ -149,6 +149,7 @@ issue-labels-include:
   # GRM default
   - Breaking Change
   - Bug
+  - Build
   - Documentation
   - Feature
   - Good First Issue
@@ -166,7 +167,6 @@ issue-labels-exclude:
   - needs triage
   - work-in-progress
   # GRM
-  - Build
 # Overrides default pluralization and header names for specific labels.
 issue-labels-alias:
   # davidzwa
